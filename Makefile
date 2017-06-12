@@ -12,3 +12,5 @@ test:
 coding-rule:
 	find ./ -name "*.py" | ${PYTHON_PATH}flake8 --config ./.config/flake8
 
+docker:
+	docker build --rm -t datadog-aws-ec2-counter .
